@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
   <!-- Styles -->
   <link rel="stylesheet" href="../assets/styles.css">
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="auth.css">
 </head>
 <body class="login-page" data-page="login" data-root="../">
   <div id="site-header"></div>
@@ -47,21 +47,6 @@
 
   <div id="site-footer"></div>
   <script src="../Js/layout.js"></script>
-  <script>
-    const passwordInput = document.getElementById("password");
-    const passwordToggle = document.querySelector(".password-toggle");
-
-    passwordToggle.addEventListener("click", () => {
-      const isVisible = passwordInput.type === "text";
-      passwordInput.type = isVisible ? "password" : "text";
-      passwordToggle.textContent = isVisible ? "Show" : "Hide";
-      passwordToggle.setAttribute("aria-label", isVisible ? "Show password" : "Hide password");
-      passwordToggle.setAttribute("aria-pressed", String(!isVisible));
-    });
-
-    document.querySelector(".login-form").addEventListener("submit", (event) => {
-      event.preventDefault();
-    });
-  </script>
+  <script src="login.js"></script>
 </body>
 </html>

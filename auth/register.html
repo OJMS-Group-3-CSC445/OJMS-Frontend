@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | OJMS</title>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body class="register-page" data-page="register" data-root="../">
+  <div id="site-header"></div>
+
+  <main class="login-main register-main">
+    <!-- Register UI -->
+    <section class="register-section">
+      <section class="login-card register-card" aria-labelledby="register-title">
+        <header class="login-card-header">
+          <h1 id="register-title">Create your account</h1>
+          <p>Register as an author to submit your work to OJMS.</p>
+        </header>
+        <form class="login-form register-form" action="#" method="post">
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="new-password" required>
+          </div>
+
+          <div class="form-field">
+            <label for="confirm-password">Confirm password</label>
+            <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" required>
+          </div>
+
+          <button class="login-submit" type="submit">Create account</button>
+          <div class="Register-link">
+            <p>Already have an account?</p>
+            <a href="login.html">Log in</a>
+          </div>
+        </form>
+      </section>
+    </section>
+    <!-- Verify Email -->
+    <section class="verify-section" aria-labelledby="verify-email-title">
+      <div class="verify-email-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32" focusable="false">
+          <rect x="3.5" y="6.5" width="25" height="19" rx="2" />
+          <path d="m4.5 8 11.5 9 11.5-9" />
+        </svg>
+      </div>
+      <h1 id="verify-email-title">Check your email</h1>
+      <p class="verify-email-message">We sent a verification link to name@example.com.</p>
+      <button class="verify-email-resend" type="button">Resend Email</button>
+      <p class="verify-email-status" role="status">Email sent again.</p>
+    </section>
+    <!-- Success -->
+    <section class="success-section" aria-labelledby="verified-title" >
+      <div class="verified-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32" focusable="false">
+          <path d="m8 16 5 5 11-11" />
+        </svg>
+      </div>
+      <h1 id="verified-title">Email verified</h1>
+      <p class="verified-message">Your account is ready.</p>
+      <a href="login.html" class="verified-login-link">Log in</a>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../Js/layout.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>

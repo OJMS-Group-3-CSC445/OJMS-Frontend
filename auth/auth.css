@@ -19,6 +19,137 @@
   /* margin-top: 32px; */
 }
 
+.register-card {
+  height: auto;
+}
+
+.register-form .form-field {
+  margin-top: 0;
+}
+
+.verify-email-UI {
+  width: min(540px, 100%);
+  min-height: 460px;
+  padding: 64px 32px 40px;
+  text-align: center;
+  background: var(--white);
+  border: 1px solid #e1e1dc;
+  border-radius: 5px;
+  box-shadow: 0 8px 24px rgba(31, 42, 68, 0.06);
+}
+
+.verify-email-icon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--navy);
+}
+
+.verify-email-icon svg {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: var(--white);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.verify-email-UI h1 {
+  color: var(--navy);
+  font: 600 30px/1.2 var(--font-serif);
+}
+
+.verify-email-message {
+  margin: 16px 0 32px;
+  color: #7a8496;
+  font-size: 16px;
+}
+
+.verify-email-resend {
+  width: min(320px, 100%);
+  min-height: 48px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--white);
+  color: var(--crimson);
+  font: 600 16px var(--font-sans);
+  cursor: pointer;
+}
+
+.verify-email-resend:hover {
+  background: var(--cream);
+}
+
+.verify-email-status {
+  margin: 24px 0 0;
+  color: #7a8496;
+  font-size: 14px;
+}
+
+.verified-UI {
+  width: min(420px, 100%);
+  min-height: 400px;
+  padding: 32px 32px 40px;
+  text-align: center;
+  background: var(--white);
+  border: 1px solid #e1e1dc;
+  border-radius: 5px;
+  box-shadow: 0 8px 24px rgba(31, 42, 68, 0.06);
+}
+
+.verified-icon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #15803d;
+}
+
+.verified-icon svg {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: var(--white);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+.verified-UI h1 {
+  color: var(--navy);
+  font: 600 26px/1.2 var(--font-serif);
+}
+
+.verified-message {
+  margin: 28px 0 48px;
+  color: #7a8496;
+  font-size: 16px;
+}
+
+.verified-login-link {
+  width: min(280px, 100%);
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--crimson);
+  border-radius: 5px;
+  background: var(--crimson);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.verified-login-link:hover {
+  background: var(--crimson-dark);
+}
+
 .login-card-header {
   /* text-align: center; */
   margin-top: 24px;
